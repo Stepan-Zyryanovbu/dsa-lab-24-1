@@ -80,7 +80,6 @@ def main():
     expression = f"(({value_1} {operation_2} {value_2}) {operation_3} {value_3})"
     result = int(eval(expression))
 
-    # Вывод результатов
     print(f"GET: {value_1:.2f} * {param_value}")
     print(f"POST: {value_2:.2f} {operation_2}")
     print(f"DELETE: {value_3:.2f} {operation_3}")
