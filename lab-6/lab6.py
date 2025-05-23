@@ -46,7 +46,7 @@ class ConvertCurrency(StatesGroup):
 # Команды
 @dp.message(Command("start"))
 async def start(message: types.Message):
-    await message.answer("Привет! Я бот для управления валютами. Набери /menu.")
+    await message.answer("Привет! Я бот EFMKNA для управления валютами. Набери /menu.")
 
 @dp.message(Command("menu"))
 async def show_menu(message: types.Message):
@@ -62,7 +62,7 @@ async def show_menu(message: types.Message):
     await message.answer("Выберите действие из меню:", reply_markup=keyboard)
 
 # Обработчики для кнопок
-@dp.message(F.text == "Старт")
+@dp.message(F.text.casefold() == "старт")
 async def start_button_handler(message: types.Message):
     await start(message)
 

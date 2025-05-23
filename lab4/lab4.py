@@ -54,7 +54,6 @@ async def save_currency_rate(message: types.Message, state: FSMContext):
         return
     
     await state.clear()
-
 # Команда /convert (конвертация валюты)
 @dp.message(Command("convert"))
 async def convert_start(message: types.Message, state: FSMContext):
