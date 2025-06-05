@@ -1,0 +1,5 @@
+2,3,4,nonequilateral
+3,2,2,isosceles
+2,2,2,equilateral
+2,3,7,IncorrectTriangleSides
+0,2,2,IncorrectTriangleSides
